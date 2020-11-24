@@ -1,5 +1,5 @@
 RSpec.describe "GET/api/v1/products" do
-    let(:products){3.times{create(:product)}}
+    let!(:products){3.times{create(:product)}}
 
     describe "successfully get list of products" do
         before do
