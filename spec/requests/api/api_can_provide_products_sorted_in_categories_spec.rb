@@ -1,5 +1,5 @@
 RSpec.describe "GET/api/products" do
-  let!(:categories){3.times{create(:categories)}}
+  let!(:categories){3.times{create(:category)}}
 
 
   describe "successfully get products sorted in categories" do

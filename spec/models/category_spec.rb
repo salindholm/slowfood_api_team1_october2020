@@ -1,8 +1,6 @@
-require 'rails_helper'
-RSpec.describe Categories, type: :model do
+RSpec.describe Category, type: :model do
   describe "is expected to have db colums" do
-    is {is_expected.to have_db_column :title}
-    is {is_expected.to have_db_column :description}
+    it {is_expected.to have_db_column :title}
   end
 
   describe "is expected to have validation" do
@@ -11,7 +9,7 @@ RSpec.describe Categories, type: :model do
 
   describe "Factory" do
     it "is expected to be valid" do
-      expect(create(:categorie)).to be_valid
+      expect(create(:category)).to be_valid
     end
   end
 end
