@@ -1,10 +1,11 @@
 RSpec.describe "GET/api/products" do
-  let!(:categories){3.times{create(:category)}}
+  let!(:category) {create(:category, title: "veggie")}
+  let!(:products) {2.times{create(:product, category: category)}}
 
 
   describe "successfully get products sorted in categories" do
     before do
-      get "/api/categories"
+      get "/api/categories/#{category.title}"
     end
 
     it "expected to return a 200 response" do
@@ -12,7 +13,7 @@ RSpec.describe "GET/api/products" do
     end
   
     it "expected to return all categories" do
-      expect(response_json["categories"].count).to eq 3
+      expect(response_json["category"]["products"].count).to eq 2
     end
   end
 end
