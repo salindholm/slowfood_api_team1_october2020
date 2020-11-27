@@ -31,8 +31,6 @@ module SlowfoodApi
       end
     end
 
-    config.generators.system_tests = nil
-
     config.generators do |generate|
     generate.helper false
     generate.assets false
