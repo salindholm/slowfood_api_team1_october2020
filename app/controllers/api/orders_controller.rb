@@ -13,13 +13,4 @@ class Api::OrdersController < ApplicationController
     render json: { message: 'Something went wrong...' }, status: 422
    end
   end
-
-  # private
-  # def order_products(order)
-  #   products = []
-  #   order.items.each do |item|
-  #     products << item.product
-  #   end
-  #   products
-  # end
 end

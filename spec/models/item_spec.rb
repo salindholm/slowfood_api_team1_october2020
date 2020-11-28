@@ -1,5 +1,12 @@
-require 'rails_helper'
-
 RSpec.describe Item, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'has db columns' do
+    it { is_expected.to have_db_column :product_id }
+    it { is_expected.to have_db_column :order_id }
+  end
+
+
+  describe "Associations" do
+    it { is_expected.to belong_to :order }
+    it { is_expected.to belong_to :product }
+  end
 end
