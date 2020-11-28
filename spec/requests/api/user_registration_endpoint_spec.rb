@@ -1,7 +1,7 @@
-RSpec.describe 'POST /api/auth/sign_up', type: :request do
+RSpec.describe 'POST /api/auth/', type: :request do
   describe 'with valid credentials' do
     before do
-      post '/api/auth/sign_up',
+      post '/api/auth/',
         params: {
           email: 'user@mail.com',
           password: 'password',
