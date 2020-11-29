@@ -14,12 +14,16 @@ class Api::OrdersController < ApplicationController
    end
   end
 
-  # private
-  # def order_products(order)
-  #   products = []
-  #   order.items.each do |item|
-  #     products << item.product
-  #   end
-  #   products
-  # end
+  def update
+    order = Order.find(params[:id])
+    product = Product.find(params[:product_id])
+    if new_item = order.items.create(product: product)
+    render json: { message:'Product was successfully added to your order',
+      order: order,
+      items: order.product
+      }, status: 201
+     else 
+      render json: { message: 'Something went wrong...' }, status: 422
+     end
+  end
 end
