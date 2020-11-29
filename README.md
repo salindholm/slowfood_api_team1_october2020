@@ -1,24 +1,56 @@
-# README
+# The Slowfood Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## The code
 
-Things you may want to cover:
+This is the API of the full stack application that we have created. Our application is an online restaurant where you can\
+look at the menu as a visitor and then register an account to add your preferred food to your cart.
 
-* Ruby version
+## User stories
 
-* System dependencies
+```
+As a restaurant API
+In order to serve a client with products
+I would like to be able to provide an endpoint for a products index
+```
 
-* Configuration
+```
+As a restaurant API
+In order to give visitors access to order functionality
+I would like to be able to allow visitors to create an account
+```
 
-* Database creation
+```
+As an restaurant API
+In order for users to add more than one product to their order
+I would like to be able to update an existing order with new order items
+```
 
-* Database initialization
+## Setup
 
-* How to run the test suite
+You need to have Ruby on your machine and clone this repo.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Dependencies
 
-* Deployment instructions
+- Rspec for acceptance testing 
+- Devise for authenticate users
 
-* ...
+## Acknowledgements
+
+- [Learning materials from craft academy](https://learn.craftacademy.co/courses/645199/lectures/11550622)
+- Our teammates
+
+## Improvement plans
+
+- To be able to provide the user with the option to review their orders
+- To be able to provide the user to finalize their orders with a checkout function
+
+## License
+
+MIT License 
+
+## Authors
+
+- Sanne Lindholm
+- Rithreaksa Khourn
+- Viktor Karlsson
+- Erik Hugoson
