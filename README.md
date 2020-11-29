@@ -25,18 +25,14 @@ In order for users to add more than one product to their order
 I would like to be able to update an existing order with new order items
 ```
 
-## Setup
-
-You need to have Ruby on your machine and clone this repo.
-
 ## Dependencies
 
 - Rspec for acceptance testing 
 - Devise for authenticate users
 
-## Acknowledgements
+## Acknowlegments
 
-- [Learning materials from craft academy](https://learn.craftacademy.co/courses/645199/lectures/11550622)
+- [Learning materials from craft academy](https://learn.craftacademy.co/courses/enrolled/667059)
 - Our teammates
 
 ## Improvement plans
@@ -48,7 +44,7 @@ You need to have Ruby on your machine and clone this repo.
 
 MIT License 
 
-## Authors
+# Authors
 
 - Sanne Lindholm
 - Rithreaksa Khourn
