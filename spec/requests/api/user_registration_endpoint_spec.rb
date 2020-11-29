@@ -2,11 +2,11 @@ RSpec.describe 'POST /api/auth/', type: :request do
   describe 'with valid credentials' do
     before do
       post '/api/auth/',
-        params: {
-          email: 'user@mail.com',
-          password: 'password',
-          password_confirmation: 'password' 
-        }
+           params: {
+             email: 'user@mail.com',
+             password: 'password',
+             password_confirmation: 'password'
+           }
     end
 
     it {
@@ -21,11 +21,11 @@ RSpec.describe 'POST /api/auth/', type: :request do
   describe 'with invalid credentials' do
     before do
       post '/api/auth/',
-        params: {
-          email: 'user@mail.com',
-          password: 'password',
-          password_confirmation: 'wrong_password' 
-        }
+           params: {
+             email: 'user@mail.com',
+             password: 'password',
+             password_confirmation: 'wrong_password'
+           }
     end
     it {
       expect(response).to have_http_status 422
@@ -39,8 +39,7 @@ RSpec.describe 'POST /api/auth/', type: :request do
       expect(
         JSON.parse(response.body)['errors']['full_messages']
       )
-      .to include "Password confirmation doesn't match Password"
+        .to include "Password confirmation doesn't match Password"
     end
-
   end
 end

@@ -4,8 +4,7 @@ RSpec.describe Item, type: :model do
     it { is_expected.to have_db_column :order_id }
   end
 
-
-  describe "Associations" do
+  describe 'Associations' do
     it { is_expected.to belong_to :order }
     it { is_expected.to belong_to :product }
   end

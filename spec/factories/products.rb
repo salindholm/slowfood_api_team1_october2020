@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :product do
-    title { "MyString" }
-    ingredients { "MyString" }
+    title { 'MyString' }
+    ingredients { 'MyString' }
     price { 1 }
-    association :category 
+    association :category
   end
 end
