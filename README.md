@@ -32,11 +32,11 @@ I would like to be able to create an order for a specific user
 ```
 
 ## Dependencies
-Ruby on Rails 6.0.2
-shoulda-matchers
-factory_bot_rails
-coveralls
-Rspec
+* Ruby on Rails 6.0.2
+* shoulda-matchers
+* factory_bot_rails
+* coveralls
+* Rspec
 
 ## Acknowledgements
 - Learning materials from Craft Academy
