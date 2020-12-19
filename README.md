@@ -1,24 +1,49 @@
-# README
+# SlowFood - API
+## Revisarik
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+This application is an API for the website [revisarik](https://revisarik.netlify.app/) which is a made-up online pizzeria. the API provides the site with the ability to store a registered user's login credentials, store objects (in the form of a pizza) that have a title, content, price and a category it belongs to. 
 
-Things you may want to cover:
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-* Ruby version
+## User stories
+```
+As a restaurant API
+In order to serve a client with products
+I would like to be able to provide an endpoint for a products index
+```
 
-* System dependencies
+```
+As a restaurant API
+In order to give the client better sorted products
+I would like to be able to send off the products with their category listed
+```
 
-* Configuration
+```
+As a restaurant API
+In order to give visitors access to order functionality
+I would like to be able to allow visitors to create an account
+```
 
-* Database creation
+```
+As a restaurant API
+In order for users to buy food they want from the restaurant
+I would like to be able to create an order for a specific user
+```
 
-* Database initialization
+## Dependencies
+Ruby on Rails 6.0.2
+shoulda-matchers
+factory_bot_rails
+coveralls
+Rspec
 
-* How to run the test suite
+## Acknowledgements
+- Learning materials from Craft Academy
+- Our teammates
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Authors
+Rithreaksa Khourn
+Sanne Lindholm
+Erik Hugosson
+Viktor Karlsson
