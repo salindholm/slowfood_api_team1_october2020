@@ -37,6 +37,7 @@ I would like to be able to create an order for a specific user
 * factory_bot_rails
 * coveralls
 * Rspec
+* Heroku
 
 ## Acknowledgements
 - Learning materials from Craft Academy
