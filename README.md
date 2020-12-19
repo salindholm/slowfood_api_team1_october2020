@@ -43,8 +43,13 @@ I would like to be able to create an order for a specific user
 - Learning materials from Craft Academy
 - Our teammates
 
+## Future Development
+* adding functionality for user to add muliple products to there order
+* adding functionality for user to view order
+* adding functionality for user to pay by card on website
+
 ## Authors
-Rithreaksa Khourn
-Sanne Lindholm
-Erik Hugosson
-Viktor Karlsson
+* Rithreaksa Khourn
+* Sanne Lindholm
+* Erik Hugosson
+* Viktor Karlsson
