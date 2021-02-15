@@ -1,7 +1,7 @@
 ## SlowFood Revisarik
 
 ## Description
-This is the API of the full stack application of a made-up online pizzeria. The API provides the site with the ability to store a registered user's login credentials, store objects (in the form of pizza's) that have a title, content, price and a category it belongs to. 
+This is the API of the full stack application we created as a made-up online pizzeria. The API provides the site with the ability to store a registered user's login credentials, store objects (in the form of pizza's) that have a title, content, price and a category it belongs to. 
 
 ## The code
 - [Deployed App(Netlify)](https://revisarik.netlify.app/)
