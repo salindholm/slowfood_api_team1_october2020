@@ -11,6 +11,10 @@ RSpec.describe Product, type: :model do
     it { is_expected.to validate_presence_of :price }
   end
 
+  describe 'Associations' do
+    it { is_expected.to have_many :order_items }
+  end
+
   describe 'Factory Bot' do
     it 'is expected to have a valid factory bot' do
       expect(create(:product)).to be_valid
