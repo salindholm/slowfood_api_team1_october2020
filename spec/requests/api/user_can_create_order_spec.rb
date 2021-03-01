@@ -1,11 +1,11 @@
-RSpec.describe 'GET /api/orders', type: :request do
+RSpec.describe 'POST /api/orders', type: :request do
   let!(:product) { create(:product, name: 'Margarita') }
   let!(:product2) { create(:product, name: 'Vesuvio') }
   let!(:user) { create(:user) }
   let(:headers) { user.create_new_auth_token }
   describe '' do
     before do
-      get '/api/orders',
+      post '/api/orders',
           params: {
             product_id: product.id
           },
