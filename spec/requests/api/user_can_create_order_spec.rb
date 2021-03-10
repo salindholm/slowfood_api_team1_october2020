@@ -11,8 +11,8 @@ RSpec.describe 'POST /api/orders', type: :request do
            },
            headers: headers
     end
-    it 'is expected to return a 200 status' do
-      expect(response).to have_http_status 200
+    it 'is expected to return a 201 status' do
+      expect(response).to have_http_status 201
     end
 
     it 'is exptected to return success message' do
