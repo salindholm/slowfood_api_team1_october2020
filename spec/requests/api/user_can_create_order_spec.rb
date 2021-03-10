@@ -16,7 +16,7 @@ RSpec.describe 'POST /api/orders', type: :request do
     end
 
     it 'is exptected to return success message' do
-      expect(response_json['message']).to eq 'The product has successfully been added to your order!'
+      expect(response_json['message']).to eq 'The product was successfully added to your order!'
     end
 
     it 'is exptected to have a product' do
